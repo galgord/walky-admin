@@ -1,0 +1,23 @@
+.header-text {
+  margin-top: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "YADLjC01_S0 0", _fb_, auto;
+  letter-spacing: 0.1rem;
+}
+
+.image {
+  display: flex;
+  width: 125px;
+  height: 70px;
+  pointer-events: 'none';
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
