@@ -1,6 +1,7 @@
 .menu-item-container {
   margin-top: 20px;
   cursor: pointer;
+  text-decoration: none;
 }
 .text {
   font-weight: 700;

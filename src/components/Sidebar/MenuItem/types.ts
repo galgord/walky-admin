@@ -3,4 +3,5 @@ export interface MenuItemProps {
   text: string;
   icon: string;
   onClick: () => void;
+  linkTo: string;
 }

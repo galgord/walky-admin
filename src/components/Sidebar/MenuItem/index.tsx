@@ -1,12 +1,13 @@
 import './index.css';
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { MenuItemProps } from './types';
 
-const MenuItem = ({isSelected, onClick, text, icon}: MenuItemProps) => {
+const MenuItem = ({isSelected, linkTo, text, icon, onClick}: MenuItemProps) => {
   return (
-   <div onClick={onClick} className='menu-item-container'>
+   <Link to={linkTo} className='menu-item-container' onClick={onClick}>
       <div className='menu-item' style={{opacity: isSelected ? 1 : 0.5}}>
       <img src={icon} className='insights-image' alt="Insight Icon" draggable="false" />
       <div>
@@ -14,7 +15,7 @@ const MenuItem = ({isSelected, onClick, text, icon}: MenuItemProps) => {
         {isSelected ?<div className='white-line'/> : null}
       </div>
       </div>
-   </div>
+   </Link>
   )
 }
 
