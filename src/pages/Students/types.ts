@@ -9,6 +9,6 @@ export interface Data {
   identifier: string;
   created: string;
   lastSignIn: string;
-  isActive: boolean;
+  isActive: string;
   studentId: number;
 }

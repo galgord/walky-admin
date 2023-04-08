@@ -10,7 +10,11 @@ import MenuItem from './MenuItem';
 
 
 const Sidebar: React.FC = () => {
-  const [currentIdex, setCurrentIndex] = useState(0);
+  const route = window.location.pathname;
+  const calculateIndex = useMemo(() => {
+    return MENU_ITEMS.findIndex(item => item.linkTo === route);
+  }, [route]);
+  const [currentIdex, setCurrentIndex] = useState(calculateIndex);
 
   const handleClicked = (index: number) => {
     setCurrentIndex(index);
