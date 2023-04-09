@@ -1,0 +1,10 @@
+.marker-container {
+  display: flex;
+  flex:1;
+  padding-top: 60px;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: '100%';
+   width: '100%'; 
+}
