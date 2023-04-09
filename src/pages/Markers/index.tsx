@@ -16,7 +16,7 @@ const Markers: React.FC = () => {
     zoom: 19
   };
 
-  const drawLinesBetweenMarkers = (map, maps) => {
+  const drawLinesBetweenMarkers = (map: any, maps: { Polyline: new (arg0: { path: { lat: number; lng: number; }[]; strokeColor: string; strokeWeight: number; strokeDasharray: string; strokeLineCap: string; }) => any; }) => {
     const markers = [
       { lat: -23.58729, lng: -46.68326 },
       { lat: -23.5866142, lng: -46.6833522 },
