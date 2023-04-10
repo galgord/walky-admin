@@ -1,9 +1,9 @@
 export enum PAGES {
-  LOGIN = '/walky-admin/',
-  HOME = '/walky-admin/home',
-  INSIGHTS = '/walky-admin/home/insights',
-  SETTINGS = '/walky-admin/home/settings',
-  NOT_FOUND = '/walky-admin/home/404',
-  MARKERS = '/walky-admin/home/markers',
-  STUDENTS = '/walky-admin/home/students',
+  LOGIN = '/',
+  HOME = '/home',
+  INSIGHTS = '/home/insights',
+  SETTINGS = '/home/settings',
+  NOT_FOUND = '/home/404',
+  MARKERS = '/home/markers',
+  STUDENTS = '/home/students',
 }

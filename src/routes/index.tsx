@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 
 import Sidebar from '../components/Sidebar';
 import Insights from '../pages/Insights';
@@ -8,7 +8,7 @@ import Settings from '../pages/Settings';
 import Students from '../pages/Students';
 import { PAGES } from './types';
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: PAGES.LOGIN,
     element: <Login/>,
