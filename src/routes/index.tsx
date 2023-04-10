@@ -1,16 +1,21 @@
 import { createBrowserRouter } from 'react-router-dom';
 
 import Sidebar from '../components/Sidebar';
+import Insights from '../pages/Insights';
+import Login from '../pages/Login';
 import Markers from '../pages/Markers';
 import Settings from '../pages/Settings';
 import Students from '../pages/Students';
-import Insights from './Insights';
 import { PAGES } from './types';
 
 export const router = createBrowserRouter([
   {
-    path: "/walky-admin/",
-    element: <Sidebar/>,
+    path: PAGES.LOGIN,
+    element: <Login/>,
+  },
+  {
+    path: PAGES.HOME,
+    element: <Sidebar />,
     children: [
       {
         path: PAGES.INSIGHTS,
@@ -29,6 +34,6 @@ export const router = createBrowserRouter([
         element: <Students />,
       },
     ],
-  },
+  }
   
 ]);
